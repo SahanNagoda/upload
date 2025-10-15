@@ -63,7 +63,7 @@ export class DOProvider extends BaseProvider {
     this.doEndPoint = options.endpoint ?? ""
     let doOptions = {
         forcePathStyle: false, // Configures to use subdomain/virtual calling format.
-        endpoint: "https://nyc3.digitaloceanspaces.com",
+        endpoint: `https://${options.region}.digitaloceanspaces.com`,
         region: options.region,
         credentials: {
             accessKeyId: options.accessKeyId,
